@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <script src="./arquivo.js"></script>
     <title>Conversor</title>
 </head>
 <body>
@@ -25,34 +24,35 @@
 
         <label>
             Converter <b>PARA</b>
-            <select>
-                <option>US$ Dólar Americano</option>
-                <option>€ Euro</option>
+            <select class="optionsMoney">
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
             </select>
         </label>
         
         <label>
             Valor
-            <input placeholder="R$ 0.000,00"> 
+            <input class="input-currency" placeholder="R$ 0.000,00"> 
         </label>
 
-        <button>Converter</button>
+        <button class="convert-button">Converter</button>
 
         <section>
             <div>   
                 <img src="./assets/brasil.png" alt="logo-brasil"/>
                 <p>Real</p>
-                <p>R$ 0.000,00</p>
+                <p class="real">R$ 0.000,00</p>
             </div>
 
             <img class="seta" src="./assets/seta.png"/>
 
             <div>   
-                <img src="./assets/estados unidos.png" alt="logo-eua"/>
-                <p>Dólar Americano</p>
-                <p>US$ 0.000,00</p>
+                <img class="logofinal" src="./assets/estados unidos.png" alt="logo-eua"/>
+                <p class="languageCurrency">Dólar Americano</p>
+                <p class="moedaExtran">US$ 0.000,00</p>
             </div>
         </section>
     </main>    
 </body>
+<script src="./arquivo.js"></script>
 </html>
