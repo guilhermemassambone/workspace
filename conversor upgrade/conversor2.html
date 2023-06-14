@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Conversor Upgrade</title>
+</head>
+<body>
+
+    <img class="logo-main" src="./assets/logo.gif" alt="logo-main"/>
+
+    <main>
+        <label>
+            Converter <b>DE</b>
+            <select class="moedasde" >
+                <option value="realde">R$ Real Brasileiro</option>
+                <option value="dolarde">US$ Dólar Americano</option>
+                <option value="eurode">€ Euro</option>
+                <option value="librade">£ Libra</option>
+            </select>
+        </label>
+
+        <label>
+            Converter <b>PARA</b>
+            <select class="moedaspara">
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <option value="real" >R$ Real Brasileiro</option>                
+            </select>
+        </label>
+
+        <label>
+            <b>Valor a ser convertido</b>
+            <input class="valorDoInput" placeholder="10.000,00"/>
+        </label>
+
+        <button class="button-convert">Converter</button>
+    
+        <section>
+            <div>
+                <img class="flagorigem" src="./assets/brasil.png" alt="logo-brazil"/>
+                <p class="textmoedaorigem" >Real</p>
+                <p class="moedaorigem">R$ 10.000,00</p>
+            </div>
+
+            <img class="logo-seta" src="./assets/seta.png" alt="seta"/>
+
+            <div>
+                <img class="flagfinal" src="./assets/usa.png" alt="logo-usa"/>
+                <p class="textmoedafinal" >Dólar Americano</p>
+                <p class="moedafinal">US$ 10.000,00</p>
+            </div>
+        </section>
+    </main>    
+</body>
+<script src="./java.js"></script>
+</html>
